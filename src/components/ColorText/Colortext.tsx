@@ -1,5 +1,5 @@
 import { TextProps } from "@arc-ui/components/dist/types/components/Text/Text";
-import { Base, Text } from "@arc-ui/components";
+import { Text } from "@arc-ui/components";
 import { FunctionComponent } from "react";
 
 export type ColorTypes = "info" | "warn" | "danger" | "success";
@@ -29,17 +29,15 @@ const ColorText: FunctionComponent<ColorTextProps> = ({
   tone = "default",
 }) => {
   return (
-    <Base>
-      <Text
-        align={align}
-        isInline={isInline}
-        isMeasured={isMeasured}
-        size={size}
-        tone={tone}
-      >
-        <span style={{ color: getColor(color) }}>{children}</span>
-      </Text>
-    </Base>
+    <Text
+      align={align}
+      isInline={isInline}
+      isMeasured={isMeasured}
+      size={size}
+      tone={tone}
+    >
+      <span style={{ color: getColor(color) }}>{children}</span>
+    </Text>
   );
 };
 
