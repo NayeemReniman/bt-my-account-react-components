@@ -1,1 +1,1 @@
-export { default } from "./Colortext";
+export { default, ColorTypes, getColor, ColorTextProps } from "./Colortext";

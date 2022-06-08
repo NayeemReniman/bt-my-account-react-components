@@ -20,10 +20,14 @@ export default [
         sourcemap: true,
       },
     ],
+    external: ["react", "react-dom"],
     plugins: [
       resolve(),
       commonjs(),
-      typescript({ tsconfig: "./tsconfig.json" }),
+      typescript({
+        exclude: [ "./src/stories/**"],
+        tsconfig: "./tsconfig.json",
+      }),
     ],
   },
   {
