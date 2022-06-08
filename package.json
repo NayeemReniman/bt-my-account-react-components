@@ -1,6 +1,6 @@
 {
-  "name": "bt-my-account-react-components",
-  "version": "1.0.0",
+  "name": "@NayeemReniman/bt-my-account-react-components",
+  "version": "1.0.1",
   "scripts": {
     "rollup": "rollup -c"
   },
@@ -31,5 +31,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/NayeemReniman"
+  }
 }
