@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ColorText, ColorTextProps } from "../components";
+import { ColorText } from "../components";
 import { Base } from "@arc-ui/components";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

@@ -1,0 +1,11 @@
+.recomendationcard__container {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  gap: 24px;
+}

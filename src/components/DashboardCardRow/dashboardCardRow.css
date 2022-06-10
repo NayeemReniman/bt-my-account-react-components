@@ -1,0 +1,9 @@
+.dashbaord__card__row__container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
