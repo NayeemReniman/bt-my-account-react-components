@@ -2,6 +2,9 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
+import postcss from "rollup-plugin-postcss";
+import { terser } from 'rollup-plugin-terser';
+import external from 'rollup-plugin-peer-deps-external';
 
 const packageJson = require("./package.json");
 
@@ -22,17 +25,21 @@ export default [
     ],
     external: ["react", "react-dom"],
     plugins: [
+      external(),
       resolve(),
       commonjs(),
       typescript({
-        exclude: [ "./src/stories/**"],
+        exclude: ["./src/stories/**"],
         tsconfig: "./tsconfig.json",
       }),
+      terser(),
+      postcss(),
     ],
   },
   {
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
+    external: [/\.css$/],
     plugins: [dts()],
   },
 ];
