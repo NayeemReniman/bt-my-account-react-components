@@ -5,6 +5,7 @@ import {
   Icon,
   VerticalSpace,
 } from "@arc-ui/components";
+import { HeadingSize } from "@arc-ui/components/dist/types/components/Heading/Heading";
 import { FunctionComponent } from "react";
 import DashboardPanel from "../DashboardPanel";
 import "./dashboardCard.css";
@@ -15,6 +16,8 @@ export interface DashboardCardProps {
   buttonText: string;
   buttonAction: () => void;
   children: React.ReactNode;
+  headingSize?: HeadingSize;
+  iconSize?: number;
 }
 
 const DashboardCard: FunctionComponent<DashboardCardProps> = ({
@@ -23,17 +26,19 @@ const DashboardCard: FunctionComponent<DashboardCardProps> = ({
   buttonAction,
   buttonText,
   children,
+  headingSize = "m",
+  iconSize = 32,
 }) => {
   return (
     <DashboardPanel
       header={
         <>
           <div className="dashbaord__card__header__text__container">
-            <Heading size="m">{headerText}</Heading>
+            <Heading size={headingSize}>{headerText}</Heading>
           </div>
           <div className="dashbaord__card__header__icon__container">
             <Align horizontal="right">
-              <Icon icon={icon} size={32}></Icon>
+              <Icon icon={icon} size={iconSize}></Icon>
             </Align>
           </div>
         </>
