@@ -1,0 +1,15 @@
+.app__template__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px 12px;
+  gap: 24px;
+  margin-top: 48px;
+  margin-left: 32px;
+}
+
+.app__template__main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

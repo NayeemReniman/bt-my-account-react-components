@@ -15,6 +15,8 @@ export {
 } from "./DashboardCardSummary";
 export { default as DashboardCardRow, DataLabels } from "./DashboardCardRow";
 
-export {default as AppHeader} from "./AppHeader";
-export {default as AppFooter} from "./AppFooter";
-export {default as SideNavbar} from "./SideNavbar";
+export { default as AppHeader } from "./AppHeader";
+export { default as AppFooter } from "./AppFooter";
+export { default as SideNavbar } from "./SideNavbar";
+export { default as AppTemplate } from "./AppTemplate";
+export { default as PageHeading } from "./PageHeading";

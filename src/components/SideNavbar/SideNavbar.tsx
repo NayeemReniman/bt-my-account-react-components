@@ -23,8 +23,8 @@ const SideNavbar: FunctionComponent<SideNavbarProps> = ({
   const [activeSubMenu, setactiveSubMenu] = useState("");
   return (
     <section>
-      <div className="sideNavBar__layer1">
-        <div className="sideNavbar__controlLayer">
+      <div className="sideNavbar__wrapper">
+        <div className="sideNavbar__navigation__container">
           {menuItems.map((menuItem) => (
             <>
               <div
@@ -58,7 +58,7 @@ const SideNavbar: FunctionComponent<SideNavbarProps> = ({
                 menuItem.subMenu != undefined && (
                   <div
                     className="sideNavbar__subMenuWrapper"
-                    key={menuItem.title}
+                    key={`${menuItem}-submenu-${menuItems.indexOf(menuItem)}`}
                   >
                     {menuItem.subMenu.map((subMenu) => (
                       <div
@@ -81,7 +81,7 @@ const SideNavbar: FunctionComponent<SideNavbarProps> = ({
             </>
           ))}
         </div>
-        {children}
+        <div className="sideNavbar__content__container">{children}</div>
       </div>
     </section>
   );

@@ -1,11 +1,11 @@
-.sideNavBar__layer1 {
+.sideNavbar__wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
   width: 240px;
 }
-.sideNavbar__controlLayer {
+.sideNavbar__navigation__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
