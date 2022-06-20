@@ -1,6 +1,6 @@
 {
   "name": "@nayeemreniman/bt-my-account-react-components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "scripts": {
     "rollup": "rollup -c",
     "storybook": "start-storybook -p 6006",

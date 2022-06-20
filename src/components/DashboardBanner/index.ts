@@ -1,1 +1,1 @@
-export { default } from "./DashboardBanner";
+export { default, DashboardBannerProps } from "./DashboardBanner";

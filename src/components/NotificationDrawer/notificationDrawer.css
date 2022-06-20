@@ -1,0 +1,53 @@
+.notifications__drawer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.notifications__container {
+  flex-grow: 2;
+  width: 100%;
+}
+
+.notification__insights__container {
+  flex-grow: 0;
+}
+
+.banners__container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notifications__heading {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  width: 100%;
+}
+
+.notifications__button__continer {
+  width: 100%;
+}
+
+.notifications__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.notifications___menu__item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  color: #808080;
+  padding-bottom: 26px;
+  cursor: pointer;
+}
+
+.notifications___menu__item.selected {
+  color: #32008a;
+  border-bottom: 2px solid #32008a;
+}

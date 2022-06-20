@@ -1,0 +1,7 @@
+.highlighter__container {
+  padding: 0px 10px;
+}
+
+.highlighter__container.rounded {
+  border-radius: 20px;
+}
